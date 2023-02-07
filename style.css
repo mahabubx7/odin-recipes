@@ -1,0 +1,144 @@
+*, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+body {
+  background-color: #efefef;
+  color: #03030e;
+}
+
+p { font-size: 1.25rem; }
+
+ol, ul { padding-left: 0; margin-left: 0; }
+
+.content {
+  display: block;
+  width: calc(100% - 6rem);
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 2rem auto;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+#menu {
+  display: grid;
+  width: calc(100% - 4rem);
+  max-width: 1140px;
+  list-style: none;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#menu a {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: #03030e;
+  text-align: center;
+  background-color: white;
+}
+
+#menu a img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 200px;
+}
+
+.homepage-img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 2rem auto 1rem;
+}
+
+.recipe-img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+}
+
+
+.heading {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem auto;
+  text-transform: capitalize;
+}
+
+
+.content ul,
+.content ol {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+}
+
+.content .summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.steps, .ingreds {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-weight: 500;
+  color: #171720;
+  gap: .75rem 0;
+}
+
+
+.goback {
+  display: block;
+  width: auto;
+  text-align: center;
+  margin: 3rem auto 2.5rem;
+  text-transform: capitalize;
+}
+
+.goback a {
+  color: white;
+  text-decoration: none;
+  background-color: #03030e;
+  padding: .75rem 2rem;
+}
+
+
+
+@media screen and (max-width: 899.9px) {
+  #menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 599.9px) {
+  #menu {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content {
+    width: calc(100% - 4rem);
+    padding: 0 2rem;
+  }
+}
